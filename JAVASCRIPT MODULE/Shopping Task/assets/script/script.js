@@ -121,13 +121,6 @@ function displayCart(cart){
         totalAmount += val.price;
         
     })
-    // total.innerHTML=`
-    //     <h3>Total Amount : $${totalAmount}</h3>
-    //     <label for="discount">Coupon Code :<label>
-    //     <input  type="text" id="discount">
-    //     <button class="discountbtn">Apply</button>
-    //     <button type="submit" class="proceed">Proceed</button>`   
-        //discound
     const totalamnt = document.querySelector('.totalamt');
     totalamnt.innerText = `Total Amount : $${totalAmount}`
     const finalamt = document.querySelector('#finalamt');
