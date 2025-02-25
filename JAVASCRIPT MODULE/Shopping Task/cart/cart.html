@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping</title>
+    <link rel="stylesheet" href="../assets/style/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <body>
+    <div class="nav">
+      <div class="logo">
+        <a href="../index.html"><h3>SG Fashions</h3></a>
+      </div>
+      <div class="menus">
+        <ul class="drop">
+          <li><a href="../mens/mens.html">Mens</a></li>
+          <li><a href="#">Womens</a></li>
+          <li><a href="#">Children</a></li>
+        </ul>
+      </div>
+      <div class="cart">
+        <li><a href=""><i class="fa fa-shopping-cart"></i><span class="countitems">0</span></a></li>
+        <li><i class="fa fa-bars" id="menu-icon"></i></li>
+      </div>
+    </div>
+    <div id="cart-container">
+       
+    </div>
+    <div id="total">
+      <h1 class="totalamt"></h1>
+      <label for="discount">Coupon Code&nbsp;:<label>
+      <input  type="text" id="discount">
+      <button class="discountbtn">Apply</button>
+      <div id="err"></div>
+      <h1 id="finalamt"></h3>
+      <button type="submit" class="proceed">Proceed</button>
+    </div>
+    <script src="../assets/script/script.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded',()=>{
+             displayCart(cart);
+        })
+
+        
+    </script>
+  </body>
+</html>

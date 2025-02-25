@@ -1,0 +1,311 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 70px;
+    box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+    background-color: white;
+}
+.nav .logo{
+    width: 30%;
+}
+.nav .logo h3{
+    font-size: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    padding-top: 10px;
+    color: black;
+}
+.nav .menus{
+    width: 50%;
+}
+.nav .cart{
+    width: 20%;
+    
+}
+.nav .menus ul{
+    display: flex;
+}
+.nav li{
+    list-style: none;
+    padding:20px 35px;
+    justify-content: center;
+    margin: auto;
+}
+.nav li a{
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+}
+.nav .menus ul li a:hover{
+    color: orangered;
+    border-bottom: 2px solid orangered;
+}
+.nav .cart{
+    display: flex;
+}
+.nav .cart li a{
+    color: black;
+}
+#menu-icon{
+    display: none;
+}
+
+/* mens page */
+#mens-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 50px;
+    padding-top: 100px;
+}
+.menitems{
+    margin: auto;
+    border: 2px solid black;
+}
+.image-block{
+    width: 300px;
+    height: 350px;
+}
+.mens-image{
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+}
+.mens-title{
+    text-align: center;
+    padding: 10px 0;
+}
+.mens-price{
+    text-align: center;
+    padding-bottom: 10px;
+}
+.addbtn{
+    display: block;
+    margin: auto;
+    width: 120px;
+    height: 40px;
+    margin-bottom: 20px;
+    outline: none;
+    border: none;
+    background-color: olive;
+    color: white;
+    font-weight: 600;
+}
+.addbtn:hover{
+    background-color: chartreuse;
+    color: black;
+}
+
+/* cart */
+#cart-container{
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(auto-fit,minmax(350px,1fr));
+    gap: 50px;
+    padding-top: 100px;
+}
+#total{
+    width: 75%;
+    margin: auto;
+    background-color: white;
+}
+#total label{
+    font-size: 30px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.discountbtn{
+    background-color: chocolate;
+    color: white;
+    width:60px;
+    height: 27px;
+    border: none;
+    outline: none;
+}
+#total input{
+    width: 150px;
+    height: 30px;
+}
+#total h1{
+    font-size: 30px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.proceed{
+    background-color: chartreuse;
+    color: white;
+    width: 100px;
+    height: 40px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    display: block;
+    margin: auto;
+}
+#err{
+    font-size: 20px;
+    color:red;
+    margin-left: 250px;
+}
+
+
+
+@media (min-width:601px) and (max-width:990px) {
+    .nav .logo h3{
+        font-size: 30px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top: 20px;
+        color: black;
+    }
+    .nav .menus{
+        width: 60%;
+    }
+    .nav .cart{
+        width: 20%;
+        
+    }
+    .nav .menus ul{
+        display: flex;
+    }
+    .nav li{
+        list-style: none;
+        padding:25px 25px;
+        justify-content: center;
+        margin: auto;
+    }
+    .nav li a{
+        text-decoration: none;
+        font-size: 20px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    .nav .menus ul li a:hover{
+        color: orangered;
+        border-bottom: 2px solid orangered;
+    }
+    .nav .cart{
+        display: flex;
+    }
+    .nav .cart li a{
+        color: black;
+    }
+    #menu-icon{
+        display: none;
+    }
+    .countitems{
+        padding-left: 5px;
+    }
+}
+
+/* mobile */
+@media (max-width:600px) {
+    .nav{
+        display: flex;
+        width: 100%;
+        height: 70px;
+        box-shadow: 1px 1px rgba(0, 0, 0, 0.4);
+        
+    }
+    .nav .logo{
+        width: 40%;
+    }
+    .nav .logo h3{
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        text-align: center;
+        padding-top:15px;
+        color: black;
+    }
+    .nav .menus{
+        display: none;
+    }
+    .nav .show{
+        width: 0;
+        display: block;
+    }
+    .nav .cart{
+        width: 80%;
+    }
+    .nav .menus ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        border: 2px solid black;
+        left: 0;
+        background-color: white;
+    }
+    .nav .menus li{
+        list-style: none;
+        padding:20px 35px;
+        justify-content: center;
+        margin: auto;
+    }
+    .nav li a{
+        text-decoration: none;
+        font-size: 25px;
+        color: black;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 400;
+    }
+    .nav .cart{
+        display: flex;
+    }
+    .nav .cart li a{
+        color: black;
+        padding-left: 50px;
+    }
+    #menu-icon{
+        display: block;
+       
+    }
+    
+    #mens-container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 50px;
+        padding-top: 100px;
+    }
+
+    #cart-container{
+        display: grid;
+        grid-template-rows: auto;
+        grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+        gap: 50px;
+        padding-top: 100px;
+    }
+
+    #total h1{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        padding-top: 20px;
+        font-size: 18px;
+    }
+    .proceed{
+        background-color: chartreuse;
+        color: white;
+        width: 100px;
+        height: 60px;
+        outline: none;
+        border: none;
+        font-size: 20px;
+    }
+    .countitems{
+        padding-left: 10px;
+    }
+
+    .countitems{
+        position: absolute;
+    }
+}
