@@ -1,0 +1,23 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 80%;
+    margin: auto;
+    border: 3px solid black;
+    
+}
+.container-1{
+    width: 100%;
+    height: 700px;
+    background-image: url('images.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+.container-2{
+    background-color: transparent;
+}

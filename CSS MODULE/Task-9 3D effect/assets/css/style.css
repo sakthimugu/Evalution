@@ -1,0 +1,38 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    margin: auto;
+    width: 60%;
+    margin-top: 110px;
+    border:2px solid black;
+    background-color: deeppink;
+}
+.container img{
+    display: block;
+    margin: auto;
+}
+.container:hover{
+    animation: effect;
+    animation-duration: 5s;
+    animation-timing-function: linear;
+}
+@keyframes effect {
+    0%{
+        transform: rotate3d(0,1,0,60deg);
+    }
+    25%{
+        transform: rotate3d(0,1,0,120deg);
+    }
+    50%{
+        transform: rotate3d(0,1,0,180deg);
+    }
+    75%{
+        transform: rotate3d(0,1,0,240deg);
+    }
+    100%{
+        transform: rotate3d(0,1,0,360deg);
+    }
+}
